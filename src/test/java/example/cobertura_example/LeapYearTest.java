@@ -13,4 +13,14 @@ public class LeapYearTest {
     public void test2() {
         Assert.assertTrue(new LeapYear().isLeapYear(400));
     }
+    
+    @Test
+    public void test3() {
+        Assert.assertFalse(new LeapYear().isLeapYear(100));
+    }
+    
+    @Test
+    public void test4() {
+        Assert.assertFalse(new LeapYear().isLeapYear(1));
+    }
 }
