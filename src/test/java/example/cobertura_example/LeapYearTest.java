@@ -8,7 +8,7 @@ import org.junit.rules.Timeout;
 public class LeapYearTest {
     
     @Rule
-    public Timeout globalTimeout= new Timeout(20);
+    public Timeout globalTimeout= new Timeout(200);
     
     @Test
     public void test1() {
@@ -22,7 +22,7 @@ public class LeapYearTest {
     
     @Test
     public void test3() {
-        Assert.assertTrue(new LeapYear().isLeapYear(100));
+        Assert.assertFalse(new LeapYear().isLeapYear(100));
     }
     
     @Test
